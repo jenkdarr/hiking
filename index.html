@@ -11,6 +11,13 @@
     <!--<link rel="stylesheet" href="hikingproject.css">-->
     <link rel="stylesheet" href="myhikingproject.css">
 <style>
+
+
+
+
+
+
+
     body{
         background-color:#ce775f ;
     }
@@ -36,6 +43,56 @@
 
 </style>
 </head>
+
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+     
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+     
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+     
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+
+
+
+
+
+<!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Places to Hike')">Places to Hike</button>
+    <button class="tablinks" onclick="openTab(event, 'Equipment')">Equipment</button>
+    
+  </div>
+  
+  <!-- Tab content -->
+  <div id="Places to Hike" class="tabcontent" style="display: none;">
+    <h3>Places to Hike</h3>
+    <p>Some Places to Hike in Idaho.</p>
+  </div>
+  
+  <div id="Equipment" class="tabcontent" style="display: none;">
+    <h3>Equipment</h3>
+    <p>Hiking involves good equipment.</p>
+  </div>
+
+
+
+
+
+
+
+
 
 
 <header>
